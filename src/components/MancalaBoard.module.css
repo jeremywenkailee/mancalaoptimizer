@@ -1,0 +1,31 @@
+.tiles {
+    width: 50%;
+    align-items: center;
+
+}
+
+.table {
+    border: 1px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.valid {
+    background-color: lime;
+}
+
+.perfect {
+    border-color: cyan;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+  }
