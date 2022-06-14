@@ -89,7 +89,7 @@ function App() {
   return (
     <div className="App">
       <MancalaBoard width={boardWidth} results = {results} onProcessBoard={processBoardHandler} />
-      <MancalaResults />
+      {results.length > 0 && <MancalaResults results = {results} />}
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.startingPosition{
+    text-align: left;
+    color: purple;
+    display: inline-block;
+}
+
+.pebblesCollected{
+    text-align: right;
+    display: inline-block;
+    flex: 1;
+}
+
+.top{
+    background-color: #4CAF50;
+    
+}

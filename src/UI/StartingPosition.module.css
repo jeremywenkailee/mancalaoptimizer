@@ -1,0 +1,12 @@
+.border{
+    color: black;
+    border-radius: 12px;
+    
+    height: 100%;
+    text-align: center;
+    flex: 1;
+}
+
+.perfect{
+    color: green;
+}

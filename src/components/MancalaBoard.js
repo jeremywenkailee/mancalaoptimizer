@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Card from "./Card";
+import Card from "../UI/Card";
 
 import classes from "./MancalaBoard.module.css";
 
@@ -10,8 +10,11 @@ const MancalaBoard = (props) => {
 
     useEffect(() => {
         if(props.results.length > 0){
-            const sorted = props.results.sort((a,b) => {
+            const sortedBefore = props.results.sort((a,b) => {
                 return b.pebblesCollected - a.pebblesCollected
+            });
+            const sorted = sortedBefore.sort((a,b) => {
+              return Number(b.perfect) - Number(a.perfect);
             });
             console.log(sorted[0].startingPosition)
             setBestChoice(sorted[0].startingPosition);
